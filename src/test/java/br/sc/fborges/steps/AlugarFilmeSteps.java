@@ -82,7 +82,8 @@ public class AlugarFilmeSteps {
 
 	@Então("^a pontuação será de (\\d+) pontos$")
 	public void aPontuaçãoSeráDePontos(int arg1) throws Throwable {
-		Assert.assertEquals(arg1, nota.getPontuacao());
+	    Assert.assertEquals(arg1, nota.getPontuacao());
 	}
 
+	
 }
