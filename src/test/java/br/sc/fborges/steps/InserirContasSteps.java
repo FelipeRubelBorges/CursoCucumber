@@ -47,27 +47,41 @@ public class InserirContasSteps {
 
 	@Quando("^seleciono Contas$")
 	public void selecionoContas() throws Throwable {
-
+		driver.findElement(By.linkText("Contas")).click();
 	}
 
 	@Quando("^seleciono Adicionar$")
 	public void selecionoAdicionar() throws Throwable {
-
+		driver.findElement(By.linkText("Adicionar")).click();
 	}
 
 	@Quando("^informo a conta \"([^\"]*)\"$")
 	public void informoAConta(String arg1) throws Throwable {
-
+		driver.findElement(By.id("nome")).sendKeys(arg1);
 	}
 
 	@Quando("^seleciono Salvar$")
 	public void selecionoSalvar() throws Throwable {
-
+		driver.findElement(By.tagName("button")).click();
 	}
 
 	@Então("^a conta é inserida com sucesso$")
 	public void aContaÉInseridaComSucesso() throws Throwable {
+		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
+		assertEquals("Conta adicionada com sucesso!", texto);
 
+	}
+
+	@Então("^sou notificado que o nome da conta é obrigatório$")
+	public void souNotificadoQueONomeDaContaÉObrigatório() throws Throwable {
+		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
+		assertEquals("Informe o nome da conta", texto);
+	}
+
+	@Então("^sou notificado que já existe uma conta com esse nome$")
+	public void souNotificadoQueJáExisteUmaContaComEsseNome() throws Throwable {
+		String texto = driver.findElement(By.xpath("/html/body/div[1]")).getText();
+		assertEquals("Já existe uma conta com esse nome!", texto);
 	}
 
 }
