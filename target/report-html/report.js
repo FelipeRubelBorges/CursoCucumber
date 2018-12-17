@@ -12,6 +12,146 @@ formatter.feature({
   "id": "cadastro-de-contas",
   "keyword": "Funcionalidade"
 });
+formatter.before({
+  "duration": 436823,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "Não deve inserir uma conta sem nome",
+  "description": "",
+  "id": "cadastro-de-contas;não-deve-inserir-uma-conta-sem-nome",
+  "type": "scenario",
+  "keyword": "Cenário"
+});
+formatter.step({
+  "line": 21,
+  "name": "que estou acessando a aplicação",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 22,
+  "name": "informo o usuário \"felipe.rubel@hotmail.com\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 23,
+  "name": "a senha \"123456\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 24,
+  "name": "seleciono entrar",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 25,
+  "name": "visualizo a página inicial",
+  "keyword": "Então "
+});
+formatter.step({
+  "line": 26,
+  "name": "seleciono Contas",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 27,
+  "name": "seleciono Adicionar",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 28,
+  "name": "seleciono Salvar",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 29,
+  "name": "sou notificado que o nome da conta é obrigatório",
+  "keyword": "Então "
+});
+formatter.match({
+  "location": "InserirContasSteps.queEstouAcessandoAAplicação()"
+});
+formatter.result({
+  "duration": 5503262629,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "felipe.rubel@hotmail.com",
+      "offset": 19
+    }
+  ],
+  "location": "InserirContasSteps.informoOUsuário(String)"
+});
+formatter.result({
+  "duration": 230300037,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "123456",
+      "offset": 9
+    }
+  ],
+  "location": "InserirContasSteps.aSenha(String)"
+});
+formatter.result({
+  "duration": 149185513,
+  "status": "passed"
+});
+formatter.match({
+  "location": "InserirContasSteps.selecionoEntrar()"
+});
+formatter.result({
+  "duration": 1379254411,
+  "status": "passed"
+});
+formatter.match({
+  "location": "InserirContasSteps.visualizoAPáginaInicial()"
+});
+formatter.result({
+  "duration": 61454589,
+  "status": "passed"
+});
+formatter.match({
+  "location": "InserirContasSteps.selecionoContas()"
+});
+formatter.result({
+  "duration": 90979593,
+  "status": "passed"
+});
+formatter.match({
+  "location": "InserirContasSteps.selecionoAdicionar()"
+});
+formatter.result({
+  "duration": 426522499,
+  "status": "passed"
+});
+formatter.match({
+  "location": "InserirContasSteps.selecionoSalvar()"
+});
+formatter.result({
+  "duration": 384313600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "InserirContasSteps.souNotificadoQueONomeDaContaÉObrigatório()"
+});
+formatter.result({
+  "duration": 39045212,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 760518457,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 103047,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 32,
   "name": "Não deve inserir uma conta com nome já existente",
@@ -74,7 +214,7 @@ formatter.match({
   "location": "InserirContasSteps.queEstouAcessandoAAplicação()"
 });
 formatter.result({
-  "duration": 4336676023,
+  "duration": 3999278256,
   "status": "passed"
 });
 formatter.match({
@@ -87,7 +227,7 @@ formatter.match({
   "location": "InserirContasSteps.informoOUsuário(String)"
 });
 formatter.result({
-  "duration": 194652353,
+  "duration": 205305847,
   "status": "passed"
 });
 formatter.match({
@@ -100,35 +240,35 @@ formatter.match({
   "location": "InserirContasSteps.aSenha(String)"
 });
 formatter.result({
-  "duration": 95475627,
+  "duration": 109004724,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasSteps.selecionoEntrar()"
 });
 formatter.result({
-  "duration": 1013177801,
+  "duration": 823004344,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasSteps.visualizoAPáginaInicial()"
 });
 formatter.result({
-  "duration": 58786508,
+  "duration": 50017531,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasSteps.selecionoContas()"
 });
 formatter.result({
-  "duration": 72112927,
+  "duration": 80235539,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasSteps.selecionoAdicionar()"
 });
 formatter.result({
-  "duration": 466513778,
+  "duration": 463318315,
   "status": "passed"
 });
 formatter.match({
@@ -141,22 +281,25 @@ formatter.match({
   "location": "InserirContasSteps.informoAConta(String)"
 });
 formatter.result({
-  "duration": 116755202,
+  "duration": 121829437,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasSteps.selecionoSalvar()"
 });
 formatter.result({
-  "duration": 416963391,
+  "duration": 508454425,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasSteps.souNotificadoQueJáExisteUmaContaComEsseNome()"
 });
 formatter.result({
-  "duration": 37298785,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[sdf]!\u003e but was:\u003c[Já existe uma conta com esse nome]!\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat br.sc.fborges.steps.InserirContasSteps.souNotificadoQueJáExisteUmaContaComEsseNome(InserirContasSteps.java:84)\r\n\tat ✽.Então sou notificado que já existe uma conta com esse nome(src/test/resources/features/inserir_conta.feature:42)\r\n",
-  "status": "failed"
+  "duration": 35319074,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 699696522,
+  "status": "passed"
 });
 });

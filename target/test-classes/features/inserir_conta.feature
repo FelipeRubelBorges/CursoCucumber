@@ -16,7 +16,7 @@ Funcionalidade: Cadastro de contas
     E informo a conta "Conta de Teste"
     E seleciono Salvar
     Então a conta é inserida com sucesso
-	@ignore
+
   Cenário: Não deve inserir uma conta sem nome
     Dado que estou acessando a aplicação
     Quando informo o usuário "felipe.rubel@hotmail.com"
