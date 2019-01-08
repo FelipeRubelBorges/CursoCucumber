@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/inserir_conta.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("inserir_conta.feature");
 formatter.feature({
   "comments": [
     {
@@ -6,300 +6,324 @@ formatter.feature({
       "value": "#language: pt"
     }
   ],
-  "line": 2,
+  "line": 3,
   "name": "Cadastro de contas",
   "description": "\nComo um usuário \nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
   "id": "cadastro-de-contas",
-  "keyword": "Funcionalidade"
+  "keyword": "Funcionalidade",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@funcionais"
+    }
+  ]
 });
-formatter.before({
-  "duration": 436823,
+formatter.scenarioOutline({
+  "line": 12,
+  "name": "Deve validar regras cadastro contas",
+  "description": "",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas",
+  "type": "scenario_outline",
+  "keyword": "Esquema do Cenário"
+});
+formatter.step({
+  "line": 13,
+  "name": "adiciono a conta \"\u003cconta\u003e\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 14,
+  "name": "recebo a mensagem \"\u003cmensagem\u003e\"",
+  "keyword": "Então "
+});
+formatter.examples({
+  "line": 16,
+  "name": "",
+  "description": "",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;",
+  "rows": [
+    {
+      "cells": [
+        "conta",
+        "mensagem"
+      ],
+      "line": 17,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;1"
+    },
+    {
+      "cells": [
+        "Conta de Teste",
+        "Conta adicionada com sucesso!"
+      ],
+      "line": 18,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;2"
+    },
+    {
+      "cells": [
+        "",
+        "Informe o nome da conta"
+      ],
+      "line": 19,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3"
+    },
+    {
+      "cells": [
+        "Conta mesmo nome",
+        "Já existe uma conta com esse nome!"
+      ],
+      "line": 20,
+      "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;4"
+    }
+  ],
+  "keyword": "Exemplos"
+});
+formatter.background({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que desejo adicionar uma conta",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "InserirContasSteps.queDesejoAdicionarUmaConta()"
+});
+formatter.result({
+  "duration": 4461958138,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 20,
-  "name": "Não deve inserir uma conta sem nome",
+  "line": 18,
+  "name": "Deve validar regras cadastro contas",
   "description": "",
-  "id": "cadastro-de-contas;não-deve-inserir-uma-conta-sem-nome",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;2",
   "type": "scenario",
-  "keyword": "Cenário"
+  "keyword": "Esquema do Cenário",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@funcionais"
+    }
+  ]
 });
 formatter.step({
-  "line": 21,
-  "name": "que estou acessando a aplicação",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 22,
-  "name": "informo o usuário \"felipe.rubel@hotmail.com\"",
+  "line": 13,
+  "name": "adiciono a conta \"Conta de Teste\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 23,
-  "name": "a senha \"123456\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 24,
-  "name": "seleciono entrar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 25,
-  "name": "visualizo a página inicial",
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 26,
-  "name": "seleciono Contas",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 27,
-  "name": "seleciono Adicionar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 28,
-  "name": "seleciono Salvar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 29,
-  "name": "sou notificado que o nome da conta é obrigatório",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "InserirContasSteps.queEstouAcessandoAAplicação()"
-});
-formatter.result({
-  "duration": 5503262629,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "felipe.rubel@hotmail.com",
-      "offset": 19
-    }
+  "line": 14,
+  "name": "recebo a mensagem \"Conta adicionada com sucesso!\"",
+  "matchedColumns": [
+    1
   ],
-  "location": "InserirContasSteps.informoOUsuário(String)"
-});
-formatter.result({
-  "duration": 230300037,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "123456",
-      "offset": 9
-    }
-  ],
-  "location": "InserirContasSteps.aSenha(String)"
-});
-formatter.result({
-  "duration": 149185513,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.selecionoEntrar()"
-});
-formatter.result({
-  "duration": 1379254411,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.visualizoAPáginaInicial()"
-});
-formatter.result({
-  "duration": 61454589,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.selecionoContas()"
-});
-formatter.result({
-  "duration": 90979593,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.selecionoAdicionar()"
-});
-formatter.result({
-  "duration": 426522499,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.selecionoSalvar()"
-});
-formatter.result({
-  "duration": 384313600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.souNotificadoQueONomeDaContaÉObrigatório()"
-});
-formatter.result({
-  "duration": 39045212,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 760518457,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 103047,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 32,
-  "name": "Não deve inserir uma conta com nome já existente",
-  "description": "",
-  "id": "cadastro-de-contas;não-deve-inserir-uma-conta-com-nome-já-existente",
-  "type": "scenario",
-  "keyword": "Cenário"
-});
-formatter.step({
-  "line": 33,
-  "name": "que estou acessando a aplicação",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 34,
-  "name": "informo o usuário \"felipe.rubel@hotmail.com\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 35,
-  "name": "a senha \"123456\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 36,
-  "name": "seleciono entrar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 37,
-  "name": "visualizo a página inicial",
   "keyword": "Então "
-});
-formatter.step({
-  "line": 38,
-  "name": "seleciono Contas",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 39,
-  "name": "seleciono Adicionar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 40,
-  "name": "informo a conta \"Conta de Teste\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 41,
-  "name": "seleciono Salvar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 42,
-  "name": "sou notificado que já existe uma conta com esse nome",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "InserirContasSteps.queEstouAcessandoAAplicação()"
-});
-formatter.result({
-  "duration": 3999278256,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "felipe.rubel@hotmail.com",
-      "offset": 19
-    }
-  ],
-  "location": "InserirContasSteps.informoOUsuário(String)"
-});
-formatter.result({
-  "duration": 205305847,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "123456",
-      "offset": 9
-    }
-  ],
-  "location": "InserirContasSteps.aSenha(String)"
-});
-formatter.result({
-  "duration": 109004724,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.selecionoEntrar()"
-});
-formatter.result({
-  "duration": 823004344,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.visualizoAPáginaInicial()"
-});
-formatter.result({
-  "duration": 50017531,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.selecionoContas()"
-});
-formatter.result({
-  "duration": 80235539,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.selecionoAdicionar()"
-});
-formatter.result({
-  "duration": 463318315,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Conta de Teste",
-      "offset": 17
+      "offset": 18
     }
   ],
-  "location": "InserirContasSteps.informoAConta(String)"
+  "location": "InserirContasSteps.adicionoAConta(String)"
 });
 formatter.result({
-  "duration": 121829437,
+  "duration": 559798075,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContasSteps.selecionoSalvar()"
+  "arguments": [
+    {
+      "val": "Conta adicionada com sucesso!",
+      "offset": 19
+    }
+  ],
+  "location": "InserirContasSteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 508454425,
-  "status": "passed"
-});
-formatter.match({
-  "location": "InserirContasSteps.souNotificadoQueJáExisteUmaContaComEsseNome()"
-});
-formatter.result({
-  "duration": 35319074,
+  "duration": 45033919,
   "status": "passed"
 });
 formatter.after({
-  "duration": 699696522,
+  "duration": 296001583,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 665406008,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que desejo adicionar uma conta",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "InserirContasSteps.queDesejoAdicionarUmaConta()"
+});
+formatter.result({
+  "duration": 4398302545,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "Deve validar regras cadastro contas",
+  "description": "",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;3",
+  "type": "scenario",
+  "keyword": "Esquema do Cenário",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@funcionais"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "adiciono a conta \"\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 14,
+  "name": "recebo a mensagem \"Informe o nome da conta\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 18
+    }
+  ],
+  "location": "InserirContasSteps.adicionoAConta(String)"
+});
+formatter.result({
+  "duration": 372658435,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Informe o nome da conta",
+      "offset": 19
+    }
+  ],
+  "location": "InserirContasSteps.receboAMensagem(String)"
+});
+formatter.result({
+  "duration": 45953548,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 267189678,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 662202906,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que desejo adicionar uma conta",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "InserirContasSteps.queDesejoAdicionarUmaConta()"
+});
+formatter.result({
+  "duration": 4491428562,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "Deve validar regras cadastro contas",
+  "description": "",
+  "id": "cadastro-de-contas;deve-validar-regras-cadastro-contas;;4",
+  "type": "scenario",
+  "keyword": "Esquema do Cenário",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@funcionais"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "adiciono a conta \"Conta mesmo nome\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 14,
+  "name": "recebo a mensagem \"Já existe uma conta com esse nome!\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Conta mesmo nome",
+      "offset": 18
+    }
+  ],
+  "location": "InserirContasSteps.adicionoAConta(String)"
+});
+formatter.result({
+  "duration": 494210031,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Já existe uma conta com esse nome!",
+      "offset": 19
+    }
+  ],
+  "location": "InserirContasSteps.receboAMensagem(String)"
+});
+formatter.result({
+  "duration": 45189929,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 272915192,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 663638595,
   "status": "passed"
 });
 });
