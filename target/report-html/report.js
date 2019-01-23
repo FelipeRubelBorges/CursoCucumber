@@ -8,7 +8,7 @@ formatter.feature({
   ],
   "line": 3,
   "name": "Cadastro de contas",
-  "description": "\nComo um usuário \nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+  "description": "\r\nComo um usuário \r\nGostaria de cadastrar contas\r\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
   "id": "cadastro-de-contas",
   "keyword": "Funcionalidade",
   "tags": [
@@ -93,7 +93,7 @@ formatter.match({
   "location": "InserirContasSteps.queDesejoAdicionarUmaConta()"
 });
 formatter.result({
-  "duration": 4461958138,
+  "duration": 6285507800,
   "status": "passed"
 });
 formatter.scenario({
@@ -136,7 +136,7 @@ formatter.match({
   "location": "InserirContasSteps.adicionoAConta(String)"
 });
 formatter.result({
-  "duration": 559798075,
+  "duration": 1026811600,
   "status": "passed"
 });
 formatter.match({
@@ -149,15 +149,15 @@ formatter.match({
   "location": "InserirContasSteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 45033919,
+  "duration": 45643600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 296001583,
+  "duration": 278303500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 665406008,
+  "duration": 825058400,
   "status": "passed"
 });
 formatter.background({
@@ -176,7 +176,7 @@ formatter.match({
   "location": "InserirContasSteps.queDesejoAdicionarUmaConta()"
 });
 formatter.result({
-  "duration": 4398302545,
+  "duration": 6282503300,
   "status": "passed"
 });
 formatter.scenario({
@@ -219,7 +219,7 @@ formatter.match({
   "location": "InserirContasSteps.adicionoAConta(String)"
 });
 formatter.result({
-  "duration": 372658435,
+  "duration": 485612900,
   "status": "passed"
 });
 formatter.match({
@@ -232,15 +232,15 @@ formatter.match({
   "location": "InserirContasSteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 45953548,
+  "duration": 56719400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 267189678,
+  "duration": 263323700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 662202906,
+  "duration": 722179100,
   "status": "passed"
 });
 formatter.background({
@@ -259,7 +259,7 @@ formatter.match({
   "location": "InserirContasSteps.queDesejoAdicionarUmaConta()"
 });
 formatter.result({
-  "duration": 4491428562,
+  "duration": 6342985700,
   "status": "passed"
 });
 formatter.scenario({
@@ -302,7 +302,7 @@ formatter.match({
   "location": "InserirContasSteps.adicionoAConta(String)"
 });
 formatter.result({
-  "duration": 494210031,
+  "duration": 661403400,
   "status": "passed"
 });
 formatter.match({
@@ -315,15 +315,15 @@ formatter.match({
   "location": "InserirContasSteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 45189929,
+  "duration": 42500500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 272915192,
+  "duration": 297701900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 663638595,
+  "duration": 754643300,
   "status": "passed"
 });
 });
