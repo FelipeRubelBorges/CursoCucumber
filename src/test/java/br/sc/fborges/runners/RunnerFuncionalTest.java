@@ -6,33 +6,31 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.CucumberOptions.SnippetType;
+import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/test/resources/features/",
 		glue = "br.sc.fborges.steps",
-		tags = {"@funcionais"},
-		plugin = {"pretty", "html:target/report-html", "json:target/report.json"},
+		tags = "@funcionais",
+		plugin = {"pretty", "html:target/report.html", "json:target/report.json"},
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE,
-		dryRun = false,
-		strict = false
+		dryRun = false
 )
 
 public class RunnerFuncionalTest {
 	
 	@BeforeClass
 	public static void reset() {
-		
-		System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver.exe");
+
 		
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://srbarriga.herokuapp.com/");
-		driver.findElement(By.id("email")).sendKeys("felipe.rubel@hotmail.com");
-		driver.findElement(By.id("senha")).sendKeys("123456");
+		driver.findElement(By.id("email")).sendKeys(java.util.Objects.requireNonNull(System.getenv("CUCUMBER_TEST_EMAIL"), "Set CUCUMBER_TEST_EMAIL"));
+		driver.findElement(By.id("senha")).sendKeys(java.util.Objects.requireNonNull(System.getenv("CUCUMBER_TEST_PASSWORD"), "Set CUCUMBER_TEST_PASSWORD"));
 		driver.findElement(By.tagName("button")).click();
 		driver.findElement(By.linkText("reset")).click();
 		driver.quit();
