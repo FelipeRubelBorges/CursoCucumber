@@ -13,11 +13,11 @@ import br.sc.fborges.entidades.NotaAluguel;
 import br.sc.fborges.entidades.TipoAluguel;
 import br.sc.fborges.servicos.AluguelService;
 import br.sc.fborges.utils.DateUtils;
-import cucumber.api.DataTable;
-import cucumber.api.PendingException;
-import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Então;
-import cucumber.api.java.pt.Quando;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.PendingException;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Então;
+import io.cucumber.java.pt.Quando;
 
 public class AlugarFilmeSteps {
 
